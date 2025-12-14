@@ -1,0 +1,32 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Inclined plane -->
+  <line x1="50" y1="250" x2="350" y2="100" stroke="black" stroke-width="3"/>
+  
+  <!-- Ground -->
+  <line x1="30" y1="250" x2="370" y2="250" stroke="black" stroke-width="2"/>
+  
+  <!-- Block -->
+  <rect x="220" y="160" width="40" height="40" fill="lightblue" stroke="black" stroke-width="2"/>
+  
+  <!-- Weight force -->
+  <line x1="240" y1="200" x2="240" y2="280" stroke="red" stroke-width="2" marker-end="url(#arrowred)"/>
+  <text x="250" y="245" font-size="14" fill="red">mg</text>
+  
+  <!-- Normal force -->
+  <line x1="220" y1="180" x2="140" y2="130" stroke="green" stroke-width="2" marker-end="url(#arrowgreen)"/>
+  <text x="130" y="120" font-size="14" fill="green">N</text>
+  
+  <!-- Angle -->
+  <path d="M 100 250 Q 120 240 130 220" fill="none" stroke="black" stroke-width="1"/>
+  <text x="110" y="265" font-size="14">θ</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="red"/>
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="green"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,43 +1,71 @@
-# Next.js on Netlify Platform Starter
+# Kibogamine: STEM Exercise Library
 
-[Live Demo](https://nextjs-platform-starter.netlify.app/)
+Kibogamine is a comprehensive, open-source platform for mastering STEM subjects through a curated collection of exercises in **Mathematics**, **Physics**, and **Chemistry**. Built with Next.js 16 and optimized for the Netlify platform.
 
-A modern starter based on Next.js 16 (App Router), Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+## 🚀 Features
 
-In this site, Netlify Core Primitives are used both implictly for running Next.js features (e.g. Route Handlers, image optimization via `next/image`, and more) and also explicitly by the user code.
+- **Multi-Subject Support**: Explore exercises categorized by subject and difficulty.
+- **LaTeX Rendering**: High-quality mathematical and chemical notation using KaTeX.
+- **Detailed Solutions**: Step-by-step guides to help understand complex concepts.
+- **Modern Stack**: Leverages Next.js 16 (App Router), Tailwind CSS, and Netlify Core Primitives (Edge Functions, Blob Store).
+- **Searchable Library**: Quickly find exercises relevant to your current study goals.
 
-Implicit usage means you're using any Next.js functionality and everything "just works" when deployed - all the plumbing is done for you. Explicit usage is framework-agnostic and typically provides more features than what Next.js exposes.
+## 🛠️ Getting Started
 
-## Deploying to Netlify
+### Prerequisites
 
-Click the button below to deploy this template to your Netlify account.
+- Node.js (Latest LTS recommended)
+- Netlify CLI (for local development)
+
+### Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd kibogamine
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Install Netlify CLI (if not already present):**
+   ```bash
+   npm install netlify-cli@latest -g
+   ```
+
+4. **Link to Netlify (recommended for full functionality):**
+   ```bash
+   netlify link
+   ```
+
+5. **Start the development server:**
+   ```bash
+   netlify dev
+   ```
+
+Visit [localhost:8888](http://localhost:8888) to see the library in action.
+
+## 📁 Project Structure
+
+- `data/exercises/`: Markdown files containing exercise content and metadata.
+- `components/`: Reusable UI components including LaTeX and Markdown renderers.
+- `lib/`: Core logic for fetching and parsing exercises.
+- `app/`: Next.js App Router pages and layouts.
+
+## 📖 Documentation
+
+- [Architecture Overview](ARCHITECTURE.md): Technical design and data flow.
+- [Contribution Guide](CONTRIBUTING.md): How to add new exercises or improve the platform.
+- [AI Context](.agent/AI_CONTEXT.md): Helpful metadata for AI agents working on this project.
+
+## 🌐 Deployment
+
+Deploying your own instance of Kibogamine to Netlify is easy:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-platform-starter)
 
-## Developing Locally
+---
 
-1. Clone this repository, then run `npm install` in its root directory.
-
-2. For the starter to have full functionality locally (e.g. edge functions, blob store), please ensure you have an up-to-date version of Netlify CLI. Run:
-
-```
-npm install netlify-cli@latest -g
-```
-
-3. Link your local repository to the deployed Netlify site. This will ensure you're using the same runtime version for both local development and your deployed site.
-
-```
-netlify link
-```
-
-4. Then, run the Next.js development server via Netlify CLI:
-
-```
-netlify dev
-```
-
-If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
-
-## Resources
-
-- Check out the [Next.js on Netlify docs](https://docs.netlify.com/frameworks/next-js/overview/)
+*Part of the Kibogamine project.*
